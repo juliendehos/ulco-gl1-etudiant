@@ -1,6 +1,6 @@
 with import <nixpkgs> {};
 
-with pkgs; stdenv.mkDerivation {
+stdenv.mkDerivation {
   name = "people";
   src = ./.;
 

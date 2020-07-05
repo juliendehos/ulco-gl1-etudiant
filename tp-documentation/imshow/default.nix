@@ -5,7 +5,7 @@ stdenv.mkDerivation {
   src = ./.;
 
   buildInputs = [
-    gnumake
+    cmake
     pkg-config
     (opencv.override { 
       enableGtk2 = true; 
@@ -16,11 +16,6 @@ stdenv.mkDerivation {
       enableEigen = false;
     })
   ];
-
-  installPhase = ''
-    mkdir -p $out/bin
-    cp imshow.out $out/bin
-   ''; 
 
 }
 
