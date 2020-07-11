@@ -1,6 +1,15 @@
-all:
-	$(CXX) -Wall -Wextra -o replicate42 main.cpp
+SRC = $(shell find . -name "*.cpp")
+BIN = $(SRC:.cpp=.out)
+CXXFLAGS = -Wall -Wextra -O2
+LDFLAGS =
+
+.PHONY: all clean
+
+all: $(BIN)
+
+%.out: %.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
 
 clean:
-	rm -f ./replicate42
+	rm -f $(BIN)
 
