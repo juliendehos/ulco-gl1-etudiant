@@ -1,5 +1,5 @@
 // fibo.cpp
-// g++ -O2 -Wall -Wextra -o fibo.out fibo.cpp
+// c++ -O2 -Wall -Wextra -o fibo.out fibo.cpp
 
 #include <chrono>
 #include <iostream>

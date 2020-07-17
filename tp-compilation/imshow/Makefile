@@ -8,7 +8,7 @@ LDFLAGS=
 all: $(BIN)
 
 %.out: $(OBJ)
-	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+	c++ $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean: 
 	rm -f $(BIN) $(OBJ)
