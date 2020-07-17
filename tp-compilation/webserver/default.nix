@@ -1,6 +1,6 @@
 with import <nixpkgs> {};
 
-stdenv.mkDerivation {
+clangStdenv.mkDerivation {
   name = "webserver";
   src = ./.;
 

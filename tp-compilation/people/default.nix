@@ -1,6 +1,6 @@
 with import <nixpkgs> {};
 
-stdenv.mkDerivation {
+clangStdenv.mkDerivation {
   name = "people";
   src = ./.;
 
@@ -9,7 +9,7 @@ stdenv.mkDerivation {
   ];
 
   buildPhase = ''
-    g++ -O2 -Wall -Wextra -pthread -o people people.cpp
+    c++ -O2 -Wall -Wextra -pthread -o people people.cpp
   '';
 
   installPhase = ''
