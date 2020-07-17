@@ -1,5 +1,5 @@
 with import <nixpkgs> {};
-stdenv.mkDerivation {
+clangStdenv.mkDerivation {
   name = "tictactoe";
   src = ./.;
   nativeBuildInputs = [

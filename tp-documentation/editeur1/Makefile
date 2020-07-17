@@ -1,3 +1,5 @@
+CXX = c++
+
 app1: app1.o module1.o
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 

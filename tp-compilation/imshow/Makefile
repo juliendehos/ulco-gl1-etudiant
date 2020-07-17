@@ -9,7 +9,7 @@ CXX= c++
 all: $(BIN)
 
 %.out: $(OBJ)
-	c++ $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean: 
 	rm -f $(BIN) $(OBJ)

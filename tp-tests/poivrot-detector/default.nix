@@ -1,5 +1,5 @@
 with import <nixpkgs> {};
-stdenv.mkDerivation rec {
+clangStdenv.mkDerivation {
     name = "poivrot-detector";
     src = ./.;
     nativeBuildInputs = [

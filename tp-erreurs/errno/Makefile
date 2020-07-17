@@ -1,3 +1,5 @@
+CXX = c++
+
 all:
 	$(CXX) main.cpp
 	(./a.out 4 && echo ok) || echo ko
