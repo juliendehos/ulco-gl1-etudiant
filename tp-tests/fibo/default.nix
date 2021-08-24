@@ -1,5 +1,5 @@
 with import <nixpkgs> {};
-clangStdenv.mkDerivation {
+stdenv.mkDerivation {
     name = "fibo";
     src = ./.;
     nativeBuildInputs = [

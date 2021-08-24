@@ -1,5 +1,5 @@
 with import <nixpkgs> {};
-clangStdenv.mkDerivation {
+stdenv.mkDerivation {
     name = "find3";
     src = ./.;
     nativeBuildInputs = [
