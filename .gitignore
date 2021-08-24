@@ -1,5 +1,7 @@
 .vscode
-build
+build*
+dist*
+result
 *.out
 .*~
 
