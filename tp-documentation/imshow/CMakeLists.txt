@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project( imshow )
 
 find_package( PkgConfig REQUIRED )
-pkg_check_modules( PKGS REQUIRED opencv )
+pkg_check_modules( PKGS REQUIRED opencv4 )
 include_directories( ${PKGS_INCLUDE_DIRS} )
 
 add_executable( imshow imshow.cpp )
