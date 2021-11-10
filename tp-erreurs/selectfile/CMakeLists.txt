@@ -11,6 +11,6 @@ include_directories( ${GTKMM_INCLUDE_DIRS} )
 add_executable( selectfile 
     src/selectfile.cpp
     src/MyWindow.cpp )
-target_link_libraries( selectfile ${GTKMM_LIBRARIES} )
+target_link_libraries( selectfile ${GTKMM_LIBRARIES} glog )
 install( TARGETS selectfile DESTINATION bin )
 

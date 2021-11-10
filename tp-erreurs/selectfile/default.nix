@@ -4,7 +4,8 @@ stdenv.mkDerivation {
     src = ./.;
     buildInputs = [
         cmake
-        pkgconfig
+        glog
         gtkmm3
+        pkgconfig
     ];
 }
