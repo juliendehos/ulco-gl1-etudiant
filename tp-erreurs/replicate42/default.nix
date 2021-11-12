@@ -1,11 +1,8 @@
 with import <nixpkgs> {};
 stdenv.mkDerivation {
-    name = "selectfile";
+    name = "fibo";
     src = ./.;
     buildInputs = [
         cmake
-        pkgconfig
-        gtkmm3
-        glog
     ];
 }

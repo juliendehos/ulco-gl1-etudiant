@@ -1,11 +1,12 @@
 with import <nixpkgs> {};
 stdenv.mkDerivation {
-    name = "selectfile";
+    name = "reverselines";
     src = ./.;
     buildInputs = [
         cmake
         pkgconfig
-        gtkmm3
         glog
     ];
 }
+
+
