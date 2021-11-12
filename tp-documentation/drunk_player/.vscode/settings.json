@@ -1,0 +1,4 @@
+{
+    "nixEnvSelector.nixShellConfig": "${workspaceRoot}/default.nix",
+    "restructuredtext.confPath": "${workspaceFolder}/manual/source"
+}
