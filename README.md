@@ -2,7 +2,7 @@
 
 dépôt étudiant du [module de GL1](https://juliendehos.gitlab.io/posts/gl1/index.html)
 
-NOM : TODO
-PRENOM : TODO
-GROUPE : TODO
+- NOM : TODO
+- PRENOM : TODO
+- GROUPE : TODO
 
