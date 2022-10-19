@@ -2,7 +2,6 @@ SRC = $(shell find . -name "*.cpp")
 BIN = $(SRC:.cpp=.out)
 CXXFLAGS = -Wall -Wextra -O2
 LDFLAGS =
-CXX = c++
 
 .PHONY: all clean
 
