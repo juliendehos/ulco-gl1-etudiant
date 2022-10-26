@@ -28,7 +28,7 @@ int main(int argc, char ** argv) {
 
     // open writer
     int size = player.getImageSize();
-    cv::VideoWriter video(outputName, CV_FOURCC('M','J','P','G'), 30, 
+    cv::VideoWriter video(outputName, cv::VideoWriter::fourcc('M','J','P','G'), 30, 
             cv::Size(size, size));
 
     // process video

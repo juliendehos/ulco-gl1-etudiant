@@ -17,8 +17,8 @@ void AbstractPlayer::loadFolder(const std::string & folderName) {
         cv::VideoCapture cap(f); 
         if (cap.isOpened()) {
             _captures.push_back(std::move(cap));
-            _size = std::max<int>(_size, cap.get(CV_CAP_PROP_FRAME_WIDTH));
-            _size = std::max<int>(_size, cap.get(CV_CAP_PROP_FRAME_HEIGHT));
+            _size = std::max<int>(_size, cap.get(cv::CAP_PROP_FRAME_WIDTH));
+            _size = std::max<int>(_size, cap.get(cv::CAP_PROP_FRAME_HEIGHT));
         }
         else {
             std::cout << "skipping: " << f << std::endl;
