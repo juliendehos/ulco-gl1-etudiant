@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 
 with pkgs; stdenv.mkDerivation {
-  name = "imshow";
+  name = "hello-gtk";
   src = ./.;
 
   buildInputs = [
@@ -12,7 +12,7 @@ with pkgs; stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp imshow.out $out/bin
+    cp *.out $out/bin
    ''; 
 
 }
