@@ -7,7 +7,7 @@ stdenv.mkDerivation {
   buildInputs = [
     boost
     cmake
-    gtkmm2
+    gtkmm3
     pkg-config
     vlc
   ];

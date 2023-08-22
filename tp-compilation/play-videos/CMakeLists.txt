@@ -1,7 +1,7 @@
 cmake_minimum_required( VERSION 3.0 )
 project( play-videos )
 
-# TODO gtkmm-2.4 libvlc
+# TODO gtkmm-3.0 libvlc
 # TODO boost (system filesystem)
 
 add_executable( play-videos
