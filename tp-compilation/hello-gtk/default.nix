@@ -7,7 +7,7 @@ with pkgs; stdenv.mkDerivation {
   buildInputs = [
     gnumake
     pkg-config
-    opencv_gtk
+    gtkmm3
   ];
 
   installPhase = ''

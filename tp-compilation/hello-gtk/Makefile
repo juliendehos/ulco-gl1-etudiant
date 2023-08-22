@@ -1,5 +1,5 @@
-OBJ= imshow.o
-BIN= imshow.out
+OBJ= hello-gtk.o
+BIN= hello-gtk.out
 CXXFLAGS= -Wall -Wextra -O2 
 LDFLAGS= 
 
