@@ -1,0 +1,10 @@
+PROJECT_NAME           = "csvstats"
+OUTPUT_DIRECTORY       = .
+INPUT                  = ../include 
+OUTPUT_LANGUAGE        = french
+EXTRACT_ALL            = YES
+RECURSIVE              = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+FULL_PATH_NAMES        = NO
+
