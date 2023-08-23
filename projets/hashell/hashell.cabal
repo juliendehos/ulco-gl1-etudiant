@@ -1,0 +1,34 @@
+cabal-version:      2.2
+name:               hashell
+version:            1.0
+build-type:         Simple
+license:            MIT
+
+description:
+    Hashell (HAskell SHELL) implémente un ensemble d'outils de shell (cat,
+    grep, wc).
+
+common deps
+    ghc-options:        -Wall -O
+    default-language:   Haskell2010
+    build-depends:      base, hspec
+
+library
+    import:             deps
+    hs-source-dirs:     src
+    exposed-modules:    Cat
+
+executable hashell
+    import:             deps
+    hs-source-dirs:     app
+    main-is:            Main.hs
+    build-depends:      hashell
+
+test-suite spec
+    import:             deps
+    main-is:            Spec.hs
+    hs-source-dirs:     test
+    type:               exitcode-stdio-1.0
+    build-depends:      hashell
+    other-modules:      CatSpec
+
