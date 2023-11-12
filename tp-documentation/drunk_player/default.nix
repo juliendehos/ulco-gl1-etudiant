@@ -28,8 +28,9 @@ in pkgs.stdenv.mkDerivation {
     boost
     cmake
     doxygen
-    pkg-config
+    mdbook
     opencv
+    pkg-config
   ];
 
 }
