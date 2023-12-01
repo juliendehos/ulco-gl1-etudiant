@@ -6,6 +6,7 @@ stdenv.mkDerivation {
         cmake
         catch2
         rapidcheck
+        mdbook
         python3Packages.sphinx
     ];
 }
