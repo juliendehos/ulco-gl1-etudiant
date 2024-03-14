@@ -4,7 +4,7 @@ stdenv.mkDerivation {
     src = ./.;
     buildInputs = [
         cmake
-        pkgconfig
+        pkg-config
         glog
     ];
 }
