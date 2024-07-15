@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.0 )
+cmake_minimum_required( VERSION 3.10 )
 project( play-videos )
 
 # TODO gtkmm-3.0 libvlc
