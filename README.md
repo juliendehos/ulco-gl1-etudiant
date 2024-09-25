@@ -4,6 +4,6 @@ dépôt étudiant du [module de GL1](https://juliendehos.gitlab.io/posts/gl1/ind
 
 - NOM : TODO
 - PRENOM : TODO
-- GROUPE : TODO
+- GROUPE : TODO (1, 2)
 
 
