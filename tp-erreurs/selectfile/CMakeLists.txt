@@ -9,6 +9,8 @@ find_package( PkgConfig REQUIRED )
 pkg_check_modules( GTKMM REQUIRED gtkmm-3.0 )
 include_directories( ${GTKMM_INCLUDE_DIRS} )
 
+add_definitions(-DGLOG_USE_GLOG_EXPORT)
+
 add_executable( selectfile src/selectfile.cpp src/MyWindow.cpp )
 target_link_libraries( selectfile glog ${GTKMM_LIBRARIES} )
 install( TARGETS selectfile DESTINATION bin )
